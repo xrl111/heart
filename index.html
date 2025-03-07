@@ -9,48 +9,109 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <style>
+      #countdown {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        padding: 20px;
+        font-size: 2em;
+        color: #ff69b4;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        display: none;
+      }
+      #content {
+        display: none;
+      }
+      .countdown-text {
+        font-size: 0.5em;
+        color: #666;
+        margin-bottom: 10px;
+      }
+      .time-unit {
+        display: inline-block;
+        margin: 0 10px;
+        text-align: center;
+      }
+      .time-value {
+        font-weight: bold;
+        color: #ff1493;
+      }
+      .time-label {
+        font-size: 0.4em;
+        color: #666;
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
-      <div class="heart"></div>
-      <div class="content">
-        <div class="tarot-card">
-          <div class="card-inner">
-            <div class="card-front">
-              <h1 class="title">Happy Women's Day</h1>
-              <h2 class="subtitle">My Beloved Nhất Thủy</h2>
-              <div class="zodiac">♑ Capricorn</div>
-              <div class="message">
-                <p>
-                  Gửi đến người đọc tarot thần bí của anh, sinh ra dưới những vì
-                  sao mùa đông...
-                </p>
-                <p>Trí tuệ em dẫn lối như những lá bài em đọc,</p>
-                <p>Tâm hồn em sâu thẳm như những điều huyền bí em khám phá.</p>
-                <p>Trong sắc màu xanh rêu, đen và xám,</p>
-                <p>Em tô điểm thế giới bằng nét duyên riêng.</p>
-                <p>Anh biết ơn vì có em trong cuộc đời này,</p>
-                <p>Tình yêu của em như chiếc áo len ấm áp.</p>
-                <p>Mỗi ngày trôi qua, anh càng cảm nhận sâu sắc,</p>
-                <p>Rằng anh là chàng trai may mắn nhất trên đời.</p>
-                <p>Chúc em ngày mới vui vẻ và hạnh phúc,</p>
-                <p>Và tình yêu của anh sẽ luôn bên em.</p>
-              </div>
-              <div class="signature-elements">
-                <div class="cat-silhouette">🐱</div>
-                <div class="tarot-symbols">
-                  <span>✨</span>
-                  <span>🌙</span>
-                  <span>⭐</span>
+    <div id="countdown">
+      <div class="countdown-text">Đợi đến ngày 8/3/2025 nhé!</div>
+      <div class="time-unit">
+        <span id="days" class="time-value">00</span>
+        <div class="time-label">Ngày</div>
+      </div>
+      <div class="time-unit">
+        <span id="hours" class="time-value">00</span>
+        <div class="time-label">Giờ</div>
+      </div>
+      <div class="time-unit">
+        <span id="minutes" class="time-value">00</span>
+        <div class="time-label">Phút</div>
+      </div>
+      <div class="time-unit">
+        <span id="seconds" class="time-value">00</span>
+        <div class="time-label">Giây</div>
+      </div>
+    </div>
+    <div id="content">
+      <div class="container">
+        <div class="heart"></div>
+        <div class="content">
+          <div class="tarot-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h1 class="title">Happy Women's Day</h1>
+                <h2 class="subtitle">My Beloved Nhất Thủy</h2>
+                <div class="zodiac">♑ Capricorn</div>
+                <div class="message">
+                  <p>
+                    Gửi đến người đọc tarot thần bí của anh, sinh ra dưới những
+                    vì sao mùa đông...
+                  </p>
+                  <p>Trí tuệ em dẫn lối như những lá bài em đọc,</p>
+                  <p>
+                    Tâm hồn em sâu thẳm như những điều huyền bí em khám phá.
+                  </p>
+                  <p>Trong sắc màu xanh rêu, đen và xám,</p>
+                  <p>Em tô điểm thế giới bằng nét duyên riêng.</p>
+                  <p>Anh biết ơn vì có em trong cuộc đời này,</p>
+                  <p>Tình yêu của em như chiếc áo len ấm áp.</p>
+                  <p>Mỗi ngày trôi qua, anh càng cảm nhận sâu sắc,</p>
+                  <p>Rằng anh là chàng trai may mắn nhất trên đời.</p>
+                  <p>Chúc em ngày mới vui vẻ và hạnh phúc,</p>
+                  <p>Và tình yêu của anh sẽ luôn bên em.</p>
+                </div>
+                <div class="signature-elements">
+                  <div class="cat-silhouette">🐱</div>
+                  <div class="tarot-symbols">
+                    <span>✨</span>
+                    <span>🌙</span>
+                    <span>⭐</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="flowers">
-          <div class="flower">🌿</div>
-          <div class="flower">🔮</div>
-          <div class="flower">🌙</div>
+          <div class="flowers">
+            <div class="flower">🌿</div>
+            <div class="flower">🔮</div>
+            <div class="flower">🌙</div>
+          </div>
         </div>
       </div>
     </div>
@@ -74,6 +135,52 @@
         font-size: 14px;
       }
     </style>
-    <script src="script.js"></script>
+    <script>
+      // Set the target date: March 8, 2025 at 00:00
+      const targetDate = new Date('2025-03-08T00:00:00').getTime();
+
+      // Update countdown every second
+      const countdownElement = document.getElementById('countdown');
+      const contentElement = document.getElementById('content');
+
+      // Show countdown initially
+      countdownElement.style.display = 'block';
+
+      const countdown = setInterval(function () {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        // Calculate time units
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Update countdown display
+        document.getElementById('days').textContent = String(days).padStart(
+          2,
+          '0'
+        );
+        document.getElementById('hours').textContent = String(hours).padStart(
+          2,
+          '0'
+        );
+        document.getElementById('minutes').textContent = String(
+          minutes
+        ).padStart(2, '0');
+        document.getElementById('seconds').textContent = String(
+          seconds
+        ).padStart(2, '0');
+
+        // When countdown is finished
+        if (distance < 0) {
+          clearInterval(countdown);
+          countdownElement.style.display = 'none';
+          contentElement.style.display = 'block';
+        }
+      }, 1000);
+    </script>
   </body>
 </html>
